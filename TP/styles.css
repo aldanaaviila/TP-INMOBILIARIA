@@ -4,8 +4,8 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -14,11 +14,8 @@ body {
 .navegador {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    max-width: 2000px;
     max-height: 50px;
-    margin: 0 auto;
     background-color: #000624;
     font-size: 1.3vw;
     z-index: 100;
@@ -26,6 +23,8 @@ body {
     align-items: center;
     padding: 10px;
 }
+
+
 
 .navegador img{
     width: 180px;
@@ -428,6 +427,7 @@ footer {
     width: 100%;
     background-color: #000624;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .contacto-central {
@@ -507,4 +507,61 @@ footer {
 .derecha ul {
     list-style: none;
     color: #ffffff;
+}
+
+/* M.Q para dispositivos medianos */
+
+@media (max-width: 768px) {
+    .contacto-central {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centro-logo img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .izquierda, .centro, .derecha {
+        margin: 10px 0;
+    }
+
+    .izquierda h4, .derecha h2 {
+        font-size: 4vw;
+    }
+
+    .izquierda p {
+        font-size: 3vw;
+    }
+}
+
+/* M.Q para dispositivos chicos */
+
+@media (max-width: 480px) {
+    .contacto-central {
+        padding: 0 15px;
+    }
+
+    .izquierda img, .centro-redes img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .izquierda h4, .derecha h2 {
+        font-size: 5vw;
+    }
+
+    .izquierda p {
+        font-size: 3.5vw;
+    }
+
+    .centro-logo img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .centro-redes img {
+        margin-left: 20px;
+    }
 }
