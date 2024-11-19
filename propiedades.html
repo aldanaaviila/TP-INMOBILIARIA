@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades A.B.C</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+    </style>
+</head>
+<body>
+        <div class = "navegador">
+            <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul id="links">
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="#propiedades.html">PROPIEDADES</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class = "search-box">
+        <div class="search-propiedades">
+            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingrese ciudad o dirección">
+        </div>
+
+        <div class="search-propiedades">
+            <select id="tipo-operacion" name="tipo-operacion">
+                <option value="operacion">Operación</option>
+                <option value="vender">Comprar</option>
+                <option value="alquilar">Alquilar</option>
+            </select>
+        </div>
+
+        <div class="search-propiedades">
+            <select id="tipo-de-propiedad" name="tipo-de-propiedad">
+                <option value="tipo-de-propiedad">Tipo de propiedad</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="terreno">Terreno</option>
+                <option value="PH">PH</option>
+            </select>
+        </div>
+
+        <div class="search-propiedades">
+            <select id="moneda" name="moneda">
+                <option value="ars">ARS</option>
+                <option value="usd">USD</option>
+            </select>
+        </div>
+
+        <div class="search-propiedades">
+            <label for="habitaciones-desde">Desde:</label>
+                <select id="habitaciones-desde" name="habitaciones_desde" required>
+                    <option value="1">1 habitación</option>
+                    <option value="2">2 habitaciones</option>
+                    <option value="3">3 habitaciones</option>
+                    <option value="4">4 habitaciones</option>
+                    <option value="5">5 habitaciones</option>
+                </select>
+
+            <label for="habitaciones-hasta">Hasta:</label>
+                <select id="habitaciones-hasta"     name="habitaciones_hasta" required>
+                    <option value="1">1 habitación</option>
+                    <option value="2">2 habitaciones</option>
+                    <option value="3">3 habitaciones</option>
+                    <option value="4">4 habitaciones</option>
+                    <option value="5">5 habitaciones</option>
+                </select>
+        </div>
+
+        <div class="search-propiedades">
+            <label for="baños-desde">Desde:</label>
+            <select id="baños-desde" name="baños-desde" required>
+                <option value="1">1 baño</option>
+                <option value="2">2 baños</option>
+                <option value="3">3 baños</option>
+            </select>
+
+        <label for="baños-hasta">Hasta:</label>
+            <select id="baños-hasta" name="baños-hasta" required>
+                <option value="1">1 baño</option>
+                <option value="2">2 baños</option>
+                <option value="3">3 baños</option>
+            </select>
+        </div>
+        
+        <button class="boton-buscar"></button>
+    </div>
+
+    <!--PROPIEDADES-->
+    <div class="espacio-propiedades">
+
+        <div class="titulo-propiedades">
+            <h2 id="titulo">PROPIEDADES</h2> <!--JS QUE HACE QUE CAMBIE-->
+        </div>
+
+        <div class="propiedades">
+            
+            <div class ="div-propiedades">
+
+                <div>
+                    <a href="propiedades.html"><img src="images/casa 1.jpg" alt="Casa 1"></a>
+                </div>
+
+                <div class="propiedades-info">
+
+                    <div class="prop-precio">
+                        <span>$580.000</span>
+                    </div>
+
+                    <div class="prop-cantidad">
+                        <div class="icono-1">
+                            <img src="images/icono-dorms.png" alt="Dormitorios">
+                            <p>2 dorms</p>
+                        </div>
+                        <div class="icono-2">
+                            <img src="images/icono-bano.png" alt="Baños">
+                            <p>1 baño</p>
+                        </div>
+                    </div>
+
+                    <div class="prop-detalle">
+                        <h5>Av. Belgrano 1100</h5>
+                        <p>Casa en alquiler en Martinez</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--PROPIEDAD 2-->
+                <div class ="div-propiedades">
+
+                    <div>
+                        <a href="propiedades.html"><img src="images/casa 2.jpg" alt="Casa 2"></a>
+                    </div>
+    
+                    <div class="propiedades-info">
+                        <div class="prop-precio">
+                            <span>$430.000</span>
+                        </div>
+    
+                        <div class="prop-cantidad">
+                            <div class="icono-1">
+                                <img src="images/icono-dorms.png" alt="Dormitorios">
+                                <p>3 dorms</p>
+                            </div>
+                            <div class="icono-2">
+                                <img src="images/icono-bano.png" alt="Baños">
+                                <p>2 baños</p>
+                            </div>
+                        </div>
+                        
+                        <div class="prop-detalle">
+                            <h5>Av. Viamonte 639</h5>
+                            <p>Casa en alquiler ubicada en San Isidro</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!--PROPIEDAD 3-->
+            <div class ="div-propiedades">
+
+                <div>
+                    <a href="propiedades.html"><img src="images/casa 3.jpg" alt="Casa 3"></a>
+                </div>
+
+                <div class="propiedades-info">
+                    <div class="prop-precio">
+                        <span>$230.000</span>
+                    </div>
+
+                    <div class="prop-cantidad">
+                        <div class="icono-1">
+                            <img src="images/icono-dorms.png" alt="Dormitorios">
+                            <p>3 dorms</p>
+                        </div>
+                        <div class="icono-2">
+                            <img src="images/icono-bano.png" alt="Baños">
+                            <p>1 baño</p>
+                        </div>
+
+                    </div>
+                    <div class="prop-detalle">
+                        <h5>San Lorenzo 1265</h5>
+                        <p>Casa en alquiler ubicada en Tigre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <footer id="contacto">
+        <div class="contacto-central">
+            <div class="izquierda">
+                <div class = "horarios">
+                <h4>HORARIOS</h4>
+                    <p>Lunes a Viernes de 9.00 a 13.00 hs. y de 15.00 a 18.00 hs.<br>Sábados de 9.00 a 12.30 hs.</p>
+                </div>
+                <div class = "ubicacion">
+                    <h4>UBICACION</h4>
+                    <img src="images/pin.png" alt="ubicacion" class="ubicacion-img">
+                    <p class="ubicacion-text">Calle 123, CABA, Buenos Aires</p>
+                </div>
+            </div>
+            
+            <div class="centro">
+                <div class="centro-logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="centro-redes">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/facebook-icono.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/instagram-icono.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="images/linkedin-icono.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            
+            <div class="derecha">
+                <div class = "derecha-busqueda">
+                    <h2>¿Qué estás buscando?</h2>
+                    <ul>
+                        <li>Terrenos</li>
+                        <li>Departamentos</li>
+                        <li>Casas</li>
+                        <li>Oficinas</li>
+                        <li>Locales</li>
+                        <li>Campos</li>
+                        <li>Galpones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
