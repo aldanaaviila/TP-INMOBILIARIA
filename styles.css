@@ -393,8 +393,6 @@ body {
 .bloque-2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
     width: 100%;
     margin: 10px;
 }
@@ -408,25 +406,20 @@ body {
 
 .bloque-2-2 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
 }
 
 .icono-1, .icono-2 {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
     width: auto;
-}
-
-.icono-1 {
-    margin-right: 20px;
 }
 
 .icono-1 img, .icono-2 img {
     width: 40px;
     height: auto;
+    margin-right: 10px;
 }
 
 /* ------------------- */
@@ -481,19 +474,22 @@ body {
 
 .propiedades {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;  
     width: 100%;
     margin: 40px;
 }
 .div-propiedades {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
     gap: 10px;
     margin: 40px;
+    border-radius: 10px;
+    background-color: #b5b5b5;
+    padding: 20px;
 }
 
 .div-propiedades img {
@@ -505,6 +501,13 @@ body {
     width: 30px;
     height: 40px;
 }
+
+.prop-precio span{
+    font-weight: 700;
+    font-size: 1.8vw;
+}
+
+
 
 
 /* SOBRE NOSOTROS */
@@ -861,7 +864,7 @@ footer {
     color: #ffffff;
 }
 
-/* M.Q para dispositivos medianos */
+/* M.Q PARA PANTALLAS CHICAS */
 
 @media (max-width: 768px) {
     .contacto-central {
