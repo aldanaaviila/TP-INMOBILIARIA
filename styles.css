@@ -12,30 +12,33 @@ body {
 /* NAVEGADOR */
 
 .navegador {
+    display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
-    width: 100%;
     max-height: 50px;
     background-color: #000624;
-    font-size: 1.3vw;
     z-index: 100;
-    display: flex;
-    align-items: center;
     padding: 10px;
+    width: 100%;
 }
 
-.navegador img{
+
+.logo img{
     width: 180px;
     height: 80px;
     transition: transform 0.5s ease-in-out;   
 }
 
-.navegador img:hover{
+.logo img:hover{
     transform: scale(1.2);
 }
 
-.navegador nav{
-    margin-left: auto;    
+.opciones {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
 }
 
 #links {
@@ -47,6 +50,7 @@ body {
 
 #links li {
     margin-right: 30px;
+    font-size: 1.5vw;
 }
 
 #links a:link {
@@ -63,6 +67,61 @@ body {
     color: #ffb700;
     text-decoration: none;
     transition: color 0.4s ease;
+}
+
+/* M.Q PANTALLAS MAS CHICAS */
+
+@media (max-width: 768px) {
+    .navegador {
+        display: flex;
+        padding: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+    
+    #links {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #links li {
+        font-size: 20px;
+    }
+
+    #links a {
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+/* M.Q PANTALLAS MAS GRANDES */
+
+@media (min-width: 768px) {
+    .navegador {
+        display: flex;
+        padding: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #links {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #links a{
+        color: #ffffff;
+        text-decoration: none;
+    }
 }
 
 /* MOTOR BUSQUEDA */
@@ -155,8 +214,39 @@ body {
     margin-right: 5px;
 }
 
+/* M.Q PANTALLAS MAS CHICAS */
 
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
 
+    .motor-de-busqueda {
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .busqueda-formulario {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .busqueda-opcion {
+        width: 100%; 
+    }
+
+    .busqueda-opcion input,
+    .busqueda-opcion select {
+        width: 100%; 
+    }
+
+    .boton-buscar {
+        width: 50%; 
+    }
+}
 
 /* CENTRO */
 
@@ -231,6 +321,30 @@ body {
     margin-top: 10px;
 }
 
+/* M.Q PANTALLAS CHICAS */
+
+@media (max-width: 768px) {
+    .seleccion {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .div-alquilar, .div-comprar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .seleccion img {
+        width: 100%;
+    }
+
+    .texto-img {
+        font-size: 4vw;
+    }
+}
+
+
 /* PROPIEDADES DESTACADAS */
 
 .destacadas {
@@ -245,7 +359,6 @@ body {
     font-size: 2.3vw;
     margin: 50px;
 }
-
 
 .destacadas-lista {
     display: flex;
@@ -369,17 +482,18 @@ body {
 .propiedades {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
-    gap: 20px;
+    width: 100%;
     margin: 40px;
 }
 .div-propiedades {
-    padding: 30px;
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
     justify-content: center;  
+    width: 30%;
+    gap: 10px;
+    margin: 40px;
 }
 
 .div-propiedades img {
@@ -387,6 +501,10 @@ body {
     height: auto;
 }
 
+.icono-1, .icono-2 {
+    width: 30px;
+    height: 40px;
+}
 
 
 /* SOBRE NOSOTROS */
