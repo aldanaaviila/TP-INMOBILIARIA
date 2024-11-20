@@ -128,7 +128,7 @@ body {
 
 .menu {
     margin-top: 70px;
-    background-image: url('images/fondo-inicio.png');
+    background-image: url('images/fondos/fondo-inicio.png');
     background-size: cover;
     background-position: center;
     height: 530px;
@@ -216,7 +216,7 @@ body {
 
 /* M.Q PANTALLAS MAS CHICAS */
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .menu {
         display: flex;
         align-items: center;
@@ -244,7 +244,7 @@ body {
     }
 
     .boton-buscar {
-        width: 50%; 
+        width: 50px; 
     }
 }
 
@@ -365,7 +365,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 100%;
     font-family: sans-serif;
     margin: 60px;
 }
@@ -407,13 +406,13 @@ body {
 .bloque-2-2 {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .icono-1, .icono-2 {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    width: auto;
+    width: 50%;
 }
 
 .icono-1 img, .icono-2 img {
@@ -422,11 +421,17 @@ body {
     margin-right: 10px;
 }
 
-/* ------------------- */
+/* M.Q PARA PANTALLAS CHICAS */
 
+@media (max-width: 768px) {
+    .bloque-2 h5{
+        font-size: 16px;
+    }
 
-
-
+    .bloque-2 span {
+        font-size: 18px;
+    }
+}
 
 
 /* PAG DE PROPIEDADES */
@@ -480,6 +485,7 @@ body {
     width: 100%;
     margin: 40px;
 }
+
 .div-propiedades {
     display: flex;
     flex-direction: column;
@@ -497,16 +503,83 @@ body {
     height: auto;
 }
 
-.icono-1, .icono-2 {
-    width: 30px;
-    height: 40px;
-}
-
 .prop-precio span{
     font-weight: 700;
     font-size: 1.8vw;
 }
 
+
+/* PROPIEDADES PAGINAS INDIVIDUALES */
+
+.propiedad-individual {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.propiedad-titulo {
+    margin-top: 70px;
+    border-bottom: 1px solid #000000;
+}
+
+.propiedad-titulo h2 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.propiedad-titulo span {
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.propiedad-imagen img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#foto {
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.slider-img img{
+    width: 10%;
+    height: 10%; 
+}
+
+#anterior, #siguiente {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#anterior {
+    left: 200px;
+}
+
+#siguiente {
+    right: 200px;
+}
 
 
 
@@ -521,7 +594,7 @@ body {
     position: relative;
     margin-top: 70px;
     padding: 20px;
-    background-image: url('images/historia.jpg');
+    background-image: url('images/fondos/historia.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -604,7 +677,7 @@ body {
 .titulo-contacto {
     margin-top: 70px;
     padding: 100px;
-    background-image: url('images/fondo-contacto.jpg');
+    background-image: url('images/fondos/fondo-contacto.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -617,15 +690,14 @@ body {
 
 .texto-contacto {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     padding: 50px;
 }
 
 .texto-contacto p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
 }
 
 .form {
@@ -739,6 +811,7 @@ label {
 
     .texto-contacto p {
         font-size: 16px;
+        text-align: center;
     }
 
     .form {
