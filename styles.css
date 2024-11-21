@@ -581,6 +581,7 @@ body {
     display: flex;
     gap: 20px;
     background-color: #c6c6c6;
+    padding: 20px;
 }
 
 .propiedad-ficha h4{
@@ -627,6 +628,39 @@ body {
     align-items: left;
 }
 
+/* M.Q PANTALLAS MAS CHICAS */
+
+@media (max-width: 768px) {
+    .propiedad-titulo h2 {
+        font-size: 20px;
+    }
+
+    .propiedad-titulo span {
+        font-size: 20px;
+    }
+
+    .propiedad-ficha {
+        display: flex;
+        flex-direction: column;
+    }
+    .propiedad-ficha h4 {
+        font-size: 16px;
+    }
+
+    .propiedad-ficha ul {
+        font-size: 12px;
+    }
+
+    .descripcion {
+        font-size: 12px;
+    }
+
+    .propiedad-ficha-der {
+        flex-direction: column;
+        width: 80%;
+    }
+
+}
 /* SOBRE NOSOTROS */
 
 .nosotros {
@@ -684,7 +718,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;  
 }
-
 
 .vision, .mision, .valores {
     flex: 1;
