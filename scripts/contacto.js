@@ -4,8 +4,8 @@ const button = document.getElementById('botonEnviar');
 
 // Evento de envío del formulario
 form.addEventListener('submit', function(event) {
+    event.preventDefault(); // prevenimos que el formulario se envíe de manera tradicional
 
-    console.log("Formulario enviado");
     
     // creacion de constantes de los valores de los campos del form
     const nombre = document.getElementById('nombre').value;
