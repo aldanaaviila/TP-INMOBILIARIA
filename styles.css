@@ -153,7 +153,6 @@ body {
     font-size: 1.8rem;
     color: white;
     font-family: sans-serif;
-    width: 100%;
     text-align: left;
     margin: 10px;
 }
@@ -162,18 +161,17 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px; 
-    width: 100%;
     align-items: center;
     flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .busqueda-opcion {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    min-width: 150px;
-    max-width: 200px;
-    flex: 0 0 auto;
+    width: 60%;
 }
 
 .busqueda-opcion input,
@@ -182,11 +180,9 @@ body {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: auto;
-    min-width: 120px;
-    max-width: 200px;
     box-sizing: border-box;
     height: 40px;
+    width: 100%;
 }
 
 .boton-buscar {
@@ -194,7 +190,7 @@ body {
     color: white;
     border: none;
     padding: 10px;
-    width: 50px;
+    width: 10%;
     height: 40px;
     font-size: 1rem;
     border-radius: 5px;
@@ -226,7 +222,6 @@ body {
 
     .motor-de-busqueda {
         align-items: flex-start;
-        padding: 15px;
     }
     
     .busqueda-formulario {
@@ -520,7 +515,7 @@ body {
 
 .propiedad-titulo {
     margin-top: 70px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
 }
 
 .propiedad-titulo h2 {
@@ -582,7 +577,55 @@ body {
     right: 200px;
 }
 
+.propiedad-ficha {
+    display: flex;
+    gap: 20px;
+    background-color: #c6c6c6;
+}
 
+.propiedad-ficha h4{
+    font-size: 1.5vw;
+    border-bottom: 2px solid #000000;
+}
+
+.propiedad-ficha ul {
+    font-size: 1vw;
+    list-style: none;
+}
+
+.propiedad-ficha li::before {
+    content: '✔';
+    color: #0b1f84;
+    font-size: 1vw;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.descripcion p{
+    padding-left: 50px;
+}
+
+.propiedad-ficha-izq {
+    width: 70%;
+    margin: 20px 100px 20px 60px;
+}
+
+.propiedad-ficha-der {
+    width: 30%;
+    margin: 20px 100px 20px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.propiedad-formulario input,
+.propiedad-formulario textarea,
+.propiedad-formulario button{
+    width: 100%;
+}
+
+.propiedad-formulario label {
+    align-items: left;
+}
 
 /* SOBRE NOSOTROS */
 

@@ -48,55 +48,85 @@
 
         
         <div class = "propiedad-ficha">
-            
-            <div class = "info-basica">
-                <h4>INFORMACION BASICA</h4>
-                <ul>
-                    <li>Ambientes : 3</li>
-                    <li>Baños : 1</li>
-                    <li>Cocheras : 1</li>
-                    <li>Plantas : 2</li>
-                    <li>Dormitorios : 2</li>
-                    <li>Condición: Excelente</li>
-                    <li>Expensas: $ 110.000</li>
-                    <li>Antigüedad : 2 Años</li>
-                </ul>
-            </div>
-            
-            <div class = "medidas">
-                
-                <h4>MEDIDAS Y SUPERFICIES</h4>
-                <ul>
-                    <li>Terreno: 87.36 m²</li>
-                    <li>Superficie Total: 87.36 m²</li>
-                </ul>
-            </div>
 
-            <div class = "descripcion">
-                
-                <h4>DESCTIPCIÓN</h4>
-                <div>
-                    <p>Duplex céntrico con patio y cochera<br>
-                        Ubicado en pleno centro de Escobar</p>
+            <div class = 'propiedad-ficha-izq'>
+                <div class = "info-basica">
+                    <h4>INFORMACION BASICA</h4>
+                    <ul>
+                        <li>Ambientes : 3</li>
+                        <li>Baños : 1</li>
+                        <li>Cocheras : 1</li>
+                        <li>Plantas : 2</li>
+                        <li>Dormitorios : 2</li>
+                        <li>Condición: Excelente</li>
+                        <li>Expensas: $ 110.000</li>
+                        <li>Antigüedad : 2 Años</li>
+                    </ul>
                 </div>
                 
-                <div>
-                    <p>Living-comedor con equipo de aire        acondicionado frío/calor. <br>
-                        Cocina amoblada con artefacto de cocina y conexión para lavarropas automático.
-                        Patio amplio. Toilette. Espacio de guardado en bajo escalera. <br>
-                        Dos dormitorios con placard y equipo de aire acondicionado frío/calor. <br>
-                        Baño completo.</p>
+                <div class = "medidas">
+                    
+                    <h4>MEDIDAS Y SUPERFICIES</h4>
+                    <ul>
+                        <li>Terreno: 87.36 m²</li>
+                        <li>Superficie Total: 87.36 m²</li>
+                    </ul>
+                </div>
+
+                <div class = "descripcion">
+                    
+                    <h4>DESCRIPCIÓN</h4>
+                    <div>
+                        <p>Duplex céntrico con patio y cochera<br>
+                            Ubicado en pleno centro de Escobar</p>
                     </div>
-                </div>  
-                
-                <div class = "propiedad-mapa">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.844974640633!2d-58.4450100154535!3d-34.615743780458115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf0a1c5bb5%3A0xf469e0b7b8ddf7b7!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1632760019827!5m2!1ses!2sar"
-                    allowfullscreen=""
-                    loading="lazy">
-                </iframe>
+                    
+                    <div>
+                        <p>Living-comedor con equipo de aire        acondicionado frío/calor. <br>
+                            Cocina amoblada con artefacto de cocina y conexión para lavarropas automático.
+                            Patio amplio. Toilette. Espacio de guardado en bajo escalera. <br>
+                            Dos dormitorios con placard y equipo de aire acondicionado frío/calor. <br>
+                            Baño completo.</p>
+                        </div>
+                    </div>  
+                    
+                    <div class = "propiedad-mapa">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.844974640633!2d-58.4450100154535!3d-34.615743780458115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf0a1c5bb5%3A0xf469e0b7b8ddf7b7!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1632760019827!5m2!1ses!2sar"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
             </div>
+
+            <div class = 'propiedad-ficha-der'>
+                <div class = "propiedad-formulario"> 
+                    <h4>CONTACTO</h4>
+                    <div>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
             
+                    <div>
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" required>
+                    </div>
+            
+                    <div>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+            
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
