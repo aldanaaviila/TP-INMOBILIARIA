@@ -428,7 +428,6 @@ body {
     }
 }
 
-
 /* PAG DE PROPIEDADES */
 
 /* BUSCADOR - FILTROS */
@@ -437,15 +436,20 @@ body {
     margin-top: 70px;
     background-color: #c6c6c6;
     height: 100px;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     align-items: center;
 }
 
 .search-propiedades {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 20px;
+    width: 100%;
+}
+
+#ubicacion {
+    font-size: 15px;
 }
 
 .search-propiedades input,
@@ -460,6 +464,21 @@ body {
     box-sizing: border-box;
     height: 40px;
 }
+
+/* M.Q PANTALLAS CHICAS */
+
+@media (max-width: 768px) {
+    .search-propiedades {
+        justify-content: flex-start; 
+    }
+
+    .search-propiedades input,
+    .search-propiedades select {
+        width: 100%; 
+        min-width: 0; 
+    }
+}
+
 
 /*PROPIEDADES*/
 
@@ -503,6 +522,44 @@ body {
     font-size: 1.8vw;
 }
 
+.prop-cantidad {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icono-1-prop, .icono-2-prop {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.icono-1-prop img, .icono-2-prop img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* M.Q PANTALLAS CHICAS */
+
+@media (max-width: 768px) {
+    .titulo-propiedades h2 {
+        font-size: 20px;
+    }
+
+    .div-propiedades {
+        width: 45%;
+    }   
+
+    .prop-precio span{
+        font-size: 20px;
+    }
+
+    .prop-detalles h5,
+    .prop-detalles p{
+        font-size: 20px;
+    }
+}
 
 /* PROPIEDADES PAGINAS INDIVIDUALES */
 
@@ -686,7 +743,7 @@ body {
 
 .caja-historia {
     position: absolute;
-    top: 210px;
+    top: 250px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -705,13 +762,16 @@ body {
 }
 
 .caja-separacion {
-    margin-top: 150px;
+    margin-top: 230px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-size: 2vw;
 }
 
 .caja-proposito {
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     display: flex;
     gap: 10px;
